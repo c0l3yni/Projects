@@ -1,0 +1,225 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	margin: 0;
+	color: white;
+	background: #333;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	background-image: url("/src/assets/rocket-bg.png");
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	/* background-position-y: 80px; */
+
+	background-size: cover;
+	margin: 0;
+}
+
+/* body:root {
+	background-attachment: fixed;
+} */
+
+a {
+	text-decoration: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+.App {
+	/* text-align: center; */
+}
+
+.product-card {
+	margin: 20px;
+}
+
+.hide-visibility {
+	visibility: hidden;
+}
+
+.card-actions-flex {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button-err-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.home-flex {
+	display: flex;
+	flex-flow: row nowrap;
+	/* align-items: center; */
+	margin: auto;
+	background: "white";
+	/* width: 500px; */
+}
+
+.search-container-flex {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin: auto;
+}
+
+.searchbar-button-flex {
+	display: flex;
+	/* width: 80%; */
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-self: center;
+}
+
+.r-logo-flex {
+	display: flex;
+	/* flex-flow: column nowrap; */
+	align-items: center;
+	justify-content: space-around;
+}
+
+.products-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.poke-name {
+	text-transform: capitalize;
+}
+
+.animate-error {
+	animation: errorWiggle 0.4s 1 linear;
+}
+
+.product-info-name {
+	text-transform: capitalize;
+	font-size: 2rem;
+	/* text-align: center; */
+}
+
+.product-info-flex {
+	padding: 0;
+	display: flex;
+	flex-flow: column wrap;
+	background: white;
+	color: #000;
+	align-items: center;
+	margin: auto;
+	border-radius: 4px;
+	margin-bottom: 120px;
+}
+
+.product-info-image {
+	max-width: 300px;
+	height: auto;
+}
+
+@keyframes errorWiggle {
+	0% {
+		-webkit-transform: translate(6px);
+		-moz-transform: translate(6px);
+	}
+	20% {
+		-webkit-transform: translate(-6px);
+		-moz-transform: translate(-6px);
+	}
+	40% {
+		-webkit-transform: translate(3px);
+		-moz-transform: translate(3px);
+	}
+	60% {
+		-webkit-transform: translate(-3px);
+		-moz-transform: translate(3px);
+	}
+	80% {
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+	}
+	100% {
+		-webkit-transform: translate(0);
+		-moz-transform: translate(0);
+	}
+}
+
+/* media queries */
+@media (max-width: 1190px) {
+	body {
+		background-image: url("/src/assets/rocket-bg-mobile.png");
+	}
+}
+
+@media (min-width: 600px) {
+	.product-info-flex,
+	.search-container-flex,
+	.home-flex {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 1084px) {
+	.product-info-flex,
+	.search-container-flex,
+	.home-flex {
+		max-width: 65%;
+	}
+}
+
+@media (min-width: 1375) {
+	.product-info-flex,
+	.search-container-flex,
+	.home-flex {
+		max-width: 59%;
+	}
+}
+
+@media (min-width: 1608px) {
+	.product-info-flex,
+	.search-container-flex,
+	.home-flex {
+		max-width: 57%;
+	}
+}
+
+@media (min-width: 1730) {
+	.product-info-flex,
+	.search-container-flex,
+	.home-flex {
+		max-width: 52%;
+	}
+}
+
+@media (min-width: 1800px) {
+	.product-info-flex,
+	.search-container-flex,
+	.home-flex {
+		max-width: 47%;
+	}
+}
+
+@media (min-width: 1970px) {
+	.product-info-flex,
+	.search-container-flex,
+	.home-flex {
+		max-width: 40%;
+	}
+}

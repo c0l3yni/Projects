@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Andy';
+    src: url('Andy-Bold.eot');
+    src: url('Andy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Andy-Bold.woff2') format('woff2'),
+        url('Andy-Bold.woff') format('woff'),
+        url('Andy-Bold.ttf') format('truetype'),
+        url('Andy-Bold.svg#Andy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
